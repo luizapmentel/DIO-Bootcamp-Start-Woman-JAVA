@@ -1,0 +1,40 @@
+CHAVE SSH (Windows)
+
+> CLI:
+ssh-keygen -t ed25519 "seuemail"
+entrar com passphrase
+- id_ed25519, id_ed25519.pub
+
+cd .ssh/
+cat id_ed25519.pub
+"chave"
+
+> GitHub: 
+SSH Keys/ Add new
+Title: "titulo"
+Key: "chave"
+
+> CLI: .ssh/
+eval $(ssh-agent -s)
+Agent pid 
+
+ssh-add id_ed25519
+entrar com passphrase
+
+TOKEN DE ACESSO PESSOAL
+
+> GitHub: SSH Key - Developer Settings - Personal Acess Tokens -
+Generate New Token
+
+check opção "repo"
+copiar
+repositorio - clonar - HTTS
+
+> CLI: /c/workspace/token
+git clone "link https"
+
+
+
+
+
+
