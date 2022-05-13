@@ -1,0 +1,30 @@
+windows (shell)
+
+dir - directory > lista diretórios contidos na pasta em que o usuário
+está situado;
+cd - chance directory > navegação entre as pastas;
+cd .. > retorna para a base da pasta que o usuário 
+estava anteriormente;
+mkdir - make directory > cria diretórios;
+cd/ > navegação específica;
+tab > autocompleta;
+cls - clear screen > limpa o terminal;
+echo > printa no terminal uma mensagem;
+">" redirecionador de fluxo, joga outputs em arquivos;
+del - deletar > deleta arquivos;
+rmdir - remove directory > deleta repositórios em sua 
+totalidade;
+
+linux (bash)
+
+ls > lista diretórios contidos na pasta em que o usuário
+está situado;
+cd - chance directory > navegação entre as pastas;
+cd/ > navegação específica;
+cd .. > retorna para a base da pasta que o usuário 
+estava anteriormente;
+clear > limpa o terminal (CTRL+L);
+pwd > caminho completo;
+rm - remove > deleta repositórios em sua totalidade
+flags: -rf: "r" = recursive, apagar tudo; "f" = force, não
+exibe mensagens de confirmação. 

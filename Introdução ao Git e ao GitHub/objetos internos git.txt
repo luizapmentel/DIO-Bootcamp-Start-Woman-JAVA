@@ -1,0 +1,33 @@
+SHA1 (Secure Hash Algorithm) > algoritmo de criptação, projetado pela NSA (Agência de Segurança Nacional dos 
+EUA) > outputs encriptados em um conjunto de 40 caracteres, cada modificações gera uma chave nova.
+
+openssl sha1 nomearquivo
+
+Objetos Internos GIT
+Blobs 
+Trees 
+Commits
+
+Blobs 
+- bloco básico de composição
+- contém metadados do git: tipo do objeto, tamanho da 
+string, tamanho do arquivo...
+
+echo 'conteudo' | git hash-object(função do git) -- stdin
+(flag de recebimento de arquivo);
+echo -e 'blob 9\0conteudo' | openssl sha1
+
+Trees
+- armazena e aponta para Blobs e outras Trees;
+- responsável por montar a estrutura de onde estão 
+localizados os arquivos;
+- guarda o nome do arquivo;
+- possuem sha1 para seus metadados;
+
+Commit
+- dá sentido para a alteração que o usuário ta realizando;
+- aponta para: trees, parente (último commit realizado antes 
+do atual), autor e uma mensagem.
+- possue timestamp - carimbo de tempo > data e hora de 
+criação;
+- possuem sha1 dos seus metadados.
